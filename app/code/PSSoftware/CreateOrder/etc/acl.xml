@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author   Dejan Beljic <beljic@gmail.com>
+ * @package  PSSoftware|CreateOrder
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="PSSoftware_CreateOrder::purchase" title="Create Order API" translate="title" sortOrder="10" />
+            </resource>
+        </resources>
+    </acl>
+</config>

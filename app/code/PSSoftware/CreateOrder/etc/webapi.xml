@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @author   Dejan Beljic <beljic@gmail.com>
+ * @package  PSSoftware|CreateOrder
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- Create an order -->
+    <route url="/V1/createorder/purchase" method="POST">
+        <service class="PSSoftware\CreateOrder\Api\PurchaseManagementInterface" method="postPurchase"/>
+        <resources>
+            <resource ref="PSSoftware_CreateOrder::purchase"/>
+        </resources>
+    </route>
+</routes>

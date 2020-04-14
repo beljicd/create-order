@@ -1,0 +1,22 @@
+{
+  "name": "pssoftware/module-purchase",
+  "description": "Create order",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "authors": [
+    {
+      "email": "beljic@gmail.com",
+      "name": "PSSoftware"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "PSSoftware\\CreateOrder\\": ""
+    }
+  }
+}
